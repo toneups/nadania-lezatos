@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nadania Lezatos - Saran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body class="bg-warning-subtle d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-danger" href="index.html">Nadania Lezatos 🌻</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-4 gap-2">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Rekomendasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="saran.html">Saran</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex-grow-1">
+      <div class="container py-4 my-4 bg-white rounded-4 shadow-sm text-center">
+        <span class="badge text-bg-warning mb-5">
+          Anak Kos Edition 🌷
+        </span>
+        <h1 class="display-5 fw-bold text-danger">
+          Sarankan Makanan ke-Nadania 🤩
+        </h1>
+        <p class="lead mb-4">
+          Punya rekomendasi makanan enak di Malang? Tulis di bawah ya!
+        </p>
+
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+          <a href="index.html" class="btn btn-warning">
+            Kembali ke Beranda
+          </a>
+          <a href="about.html" class="btn btn-outline-danger">Lihat Rekomendasi
+            </a>
+        </div>
+      </div>
+
+      <section class="py-5">
+        <div class="container">
+            <h2>Form Sarankan Makanan</h2>
+            <form>
+              <div class="row g-5">
+                <div class="col-12 col-md-6">
+                  <label for="namaPengirim" class="form-label">Nama Kamu</label>
+                  <input type="text" class="form-control" id="namaPengirim" placeholder="Masukkan nama kamu">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="emailPengirim" class="form-label">Email Kamu</label>
+                  <input type="email" class="form-control" id="emailPengirim" placeholder="xxx@gmail.com">
+                </div>
+                <div class="col-12">
+                  <label for="namaMakanan" class="form-label">Nama Makanan</label>
+                  <input type="text" class="form-control" id="namaMakanan" placeholder="Contoh: Bakwan kriuk">
+                </div>
+                <div class="col-12">
+                  <label for="lokasiMakanan" class="form-label">Nama/Lokasi Tempat</label>
+                  <input type="text" class="form-control" id="lokasiMakanan" placeholder="Contoh: di sebelah gerbang veteran UB">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="rangeHarga" class="form-label">Range Harga</label>
+                  <select class="form-select" id="rangeHarga">
+                    <option selected>Pilih range harga</option>
+                    <option value="1">Di bawah 10K</option>
+                    <option value="2">10K - 15K</option>
+                    <option value="3">15K - 20K</option>
+                    <option value="4">Di atas 20K</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="deskripsiMakanan" class="form-label">Deskripsi</label>
+                  <textarea class="form-control" id="deskripsiMakanan" rows="3" placeholder="ceritakan kenapa worth to buy"></textarea>
+                </div>
+                <div class="col-12 d-flex gap-2">
+                  <button type="kirim" class="btn btn-warning">Kirim Saran</button>
+                </div>
+              </div>
+            </form>
+        </div>
+      </section>
+    </div>
+    <footer class="py-2 text-center bg-white shadow-sm">
+      <div class="container">
+        <p class="mb-0 text-danger fw-semibold">
+            2026 Nadania Lezatos - Anak Kos Edition 🌷
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
